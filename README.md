@@ -1,5 +1,5 @@
 ###云账户红包SDK接入指南(iOS)
-- 版本号：`1.0.0`
+- SDK版本号：`1.1.0`
 - [集成Demo](https://github.com/YunzhanghuOpen/Redpacket-Demo-iOS)
 - [官网](https://www.yunzhanghu.com)
 
@@ -22,13 +22,14 @@
 **Token注册方式（共三种）**
 
 **1. 签名方式（任何App都可以基于此方式实现红包功能）**
+注册商户：[注册地址](https://bv2.yunzhanghu.com/app/register)
  签名方法见：[云账户REST API文档](http://yunzhanghu-com.oss-cn-qdjbp-a.aliyuncs.com/%E4%BA%91%E8%B4%A6%E6%88%B7%E7%BA%A2%E5%8C%85%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3-v3_0_1.pdf)
 
 ```
 + (RedpacketRegisitModel *)signModelWithAppUserId:(NSString *)appUserId     //  App的用户ID
-                                       signString:(NSString *)sign          //  当前用户的签名
-                                          partner:(NSString *)partner       //  在云账户注册的合作者
-                                     andTimeStamp:(NSString *)timeStamp;    //  签名的时间戳
+                                       signString:(NSString *)sign          //  当前用户的签名（签名方法获取）
+                                          partner:(NSString *)partner       //  在云账户注册的合作者（网站注册后可得到）
+                                     andTimeStamp:(NSString *)timeStamp;    //  签名的时间戳（签名方法获取）
 ```
 **2. 环信方式**
 
@@ -128,13 +129,13 @@
                      advertisementAction:nil
 ```
 
-**广告红包**
+**营销红包(原广告红包)**
 
 ```
 + (void)redpacketTouchedWithMessageModel:#上文中生成的MessageModel#
                      fromViewController:#CurrentController#
                       redpacketGrabBlock:#抢红包成功后的回调#
-                     advertisementAction:#广告红包抢红包成功后的行为回调(分享，取消)#
+                     advertisementAction:#广告红包抢红包成功后的行为回调(查看详情，分享)#
 
 ```
 
@@ -145,6 +146,7 @@
 
 **相关UI（红包样式）**
 [集成Demo](https://github.com/YunzhanghuOpen/Redpacket-Demo-iOS)中已经提供开源代码，请在Demo中查找
+其它IM，请在不同的IM开源Demo中查找即可。
 
 **三方支付回调**
 请在[集成Demo](https://github.com/YunzhanghuOpen/Redpacket-Demo-iOS) 中查找`AppDelegate+Redpacket`，在工程中引入即可
@@ -161,6 +163,12 @@
 **集成帮助**
 [集成Demo](https://github.com/YunzhanghuOpen/Redpacket-Demo-iOS)
 
+**cocoapods支持**
+红包SDK京东版本：[RedpacketLib](https://cocoapods.org/?q=Redpacket)
+红包SDK支付宝版本：[RedpacketAliAuthLib](https://cocoapods.org/?q=RedpacketAliAuthLib)
+
+红包SDK会关联支付宝SDK，无需重新集成支付宝。
+
 ---
 
 
@@ -170,3 +178,5 @@
  业务咨询: **bd@yunzhanghu.com**
  客服 QQ :  **4006565739**
  技术QQ群: **366135448**
+
+
