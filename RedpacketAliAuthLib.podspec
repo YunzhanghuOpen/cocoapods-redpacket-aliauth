@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://yunzhanghu.com'
   s.license          = { :type => 'MIT', :file => "LICENSE" }
   s.author           = { 'Mr.Yang' => 'tonggang.yang@yunzhanghu.com' }
-  s.source           = { :git => 'https://github.com/YunzhanghuOpen/cocoapods-redpacket-aliauth.git', :tag => "#{s.version}" }
+  s.source           = { :git => 'git@github.com:YunzhanghuOpen/cocoapods-redpacket-aliauth.git', :tag => "#{s.version}" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
