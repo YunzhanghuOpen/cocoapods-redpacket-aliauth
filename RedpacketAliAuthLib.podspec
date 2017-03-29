@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://yunzhanghu.com'
   s.license          = { :type => 'MIT', :file => "LICENSE" }
   s.author           = { 'Mr.Yang' => 'tonggang.yang@yunzhanghu.com' }
-  s.source           = { :git => 'git@github.com:YunzhanghuOpen/cocoapods-redpacket-aliauth.git', :tag => "#{s.version}" }
+  s.source           = { :git => 'https://github.com/YunzhanghuOpen/cocoapods-redpacket-aliauth.git', :tag => "#{s.version}" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -27,5 +27,4 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox'
   #s.resource = “redpacket.bundle"
   s.documentation_url = 'https://new.yunzhanghu.com/integration/ios.html'
-  s.dependency 'RedPacketAlipay'
 end
