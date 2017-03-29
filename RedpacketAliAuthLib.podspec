@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Redpacket/*.h'
   s.resources = ['Redpacket/resources/*.bundle']
   s.frameworks = 'AudioToolbox'
+  s.libraries    = 'z'
   #s.resource = “redpacket.bundle"
   s.documentation_url = 'https://new.yunzhanghu.com/integration/ios.html'
 end
