@@ -21,9 +21,9 @@ typedef NS_ENUM(NSInteger,RPRedpacketControllerType){
 /** 发红包成功后的回调， MessageModel红包相关的数据，发红包者信息，收红包者信息，抢到的红包金额*/
 typedef void(^RedpacketSendBlock)(RedpacketMessageModel *model);
 /** 开发者查询成功列表成功的回调*/
-typedef void(^RedpacketMemberFetchFinishBlock)(NSArray<RedpacketUserInfo *> * groupMemberList);
+typedef void(^RedpacketMemberListFetchBlock)(NSArray<RedpacketUserInfo *> * groupMemberList);
 /** 获取定向红包，群成员列表的回调，开发者查询成功后，通过fetchFinishBlock回调给SDK*/
-typedef void(^RedpacketMemberListBlock)(RedpacketMemberFetchFinishBlock fetchFinishBlock);
+typedef void(^RedpacketMemberListBlock)(RedpacketMemberListFetchBlock fetchFinishBlock);
 /** 广告红包事件回调*/
 typedef void(^RedpacketAdvertisementAction)(NSDictionary *args);
 /** 抢红包成功后的回调*/
