@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RedpacketAliAuthLib'
-  s.version          = '1.1.2'
+  s.version          = '1.1.3'
   s.summary          = 'RedpacketAliAuthLib'
   s.description      = <<-DESC
                        RedpacketAliAuthLib, allow you to send redpacket in your project.

@@ -10,9 +10,9 @@
 需要注意的是如果已经集成了钱包版红包SDK，暂不支持切换到支付宝版红包SDK（两个版本不支持互通）。
 集成演示Demo，开发者可以通过此Demo了解iOS红包SDK的集成，集成方式仅供参考。
 
-[官网](www.yunzhanghu.com)
+[官网](www.yunzhanghu.com) - www.yunzhanghu.com
 
-[文档](https://new.yunzhanghu.com/)
+[文档](https://new.yunzhanghu.com/) www.new.yunzhanghu.com
 
 #### 联系我们:
 
