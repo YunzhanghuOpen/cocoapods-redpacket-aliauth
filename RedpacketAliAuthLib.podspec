@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Redpacket/*.{h,m}'
   s.public_header_files = 'Redpacket/*.h'
   s.resources = ['Redpacket/resources/*.bundle']
-  s.frameworks = 'AudioToolbox'
+  s.frameworks = 'AudioToolbox', 'CFNetwork'
   s.libraries    = 'z'
   s.dependency 'RedPacketAlipay'
   #s.resource = “redpacket.bundle"
