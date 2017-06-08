@@ -11,23 +11,24 @@
 
 #import <Foundation/Foundation.h>
 
+/// APP通过以下文件便可与SDK完成对接
+
 #if TARGET_OS_IPHONE
 
-#import "YZHRedpacketBridge.h"
-#import "YZHRedpacketBridgeProtocol.h"
-#import "RedpacketOpenConst.h"
-#import "RedpacketMessageModel.h"
-#import "RedpacketErrorCode.h"
+#import "RPRedpacketBridge.h"
+#import "RPRedpacketModel.h"
 #import "RedpacketViewControl.h"
+#import "RPUserInfo.h"
+#import "RPAdvertInfo.h"
 
 #else
-#import <RedpacketLib/YZHRedpacketBridge.h>
-#import <RedpacketLib/YZHRedpacketBridgeProtocol.h>
-#import <RedpacketLib/RedpacketOpenConst.h>
-#import <RedpacketLib/RedpacketMessageModel.h>
-#import <RedpacketLib/RedpacketErrorCode.h>
+
+#import <RedpacketLib/RPRedpacketBridge.h>
+#import <RedpacketLib/RPRedpacketModel.h>
 #import <RedpacketLib/RedpacketViewControl.h>
+#import <RedpacketLib/RPUserInfo.h>
+#import <RedpacketLib/RPAdvertInfo.h>
 
 #endif
 
-#endif /* RedpacketLib_h */
+#endif
