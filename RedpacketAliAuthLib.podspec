@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.resources = ['Redpacket/resources/*.bundle']
   s.frameworks = 'AudioToolbox', 'CFNetwork'
   s.libraries    = 'z'
-  s.dependency 'RedPacketAlipay'
+  s.dependency 'RPAlipayLib'
   #s.resource = “redpacket.bundle"
   s.documentation_url = 'https://new.yunzhanghu.com/integration/ios.html'
 end
